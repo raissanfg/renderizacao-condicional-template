@@ -1,13 +1,13 @@
 import { Form, FormContainer, Input, SendButton, StyledLabel, RegisterButton } from "./styled";
 
-function TelaLogin() {
+function TelaLogin( {setTelaAtual} ) {
   const login = () => {
     // validação de login ainda será visto mais pra frente no curso
-    alert("Login bem sucedido, mas falta fazer a prática 3 e remover esse alerta")
+    setTelaAtual("telaPrincipal")
   }
 
   const mostrarTelaCadastro = () => {
-    alert("Faça a prática 2 e remova esse alerta")
+    setTelaAtual("telaCadastro")
   }
 
   return (
